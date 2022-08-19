@@ -136,6 +136,7 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+         multiDexEnabled true
     }
     splits {
         abi {
@@ -189,6 +190,7 @@ android {
 }
 
 dependencies {
+    implementation 'com.android.support:multidex:2.0.1'
     implementation "com.google.android.gms:play-services-base:16.1.0"
     implementation "com.google.firebase:firebase-core:17.0.1"
     implementation "com.google.firebase:firebase-messaging:19.0.1"
